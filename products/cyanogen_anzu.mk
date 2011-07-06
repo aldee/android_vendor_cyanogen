@@ -21,7 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=LT15i BUILD_ID=3.0.A.2.181 BUILD_DI
 PRODUCT_PACKAGES += Torch
 
 # Broadcom FM radio
-$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)
 
 #
 # Set ro.modversion
@@ -35,7 +35,7 @@ else
             ro.modversion=CyanogenMod-7.1.0-RC1-anzu
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-anzu-KANG
+            ro.modversion=CyanogenMod-7.1.0-RC1-anzu-FXP012
     endif
 endif
 
@@ -44,3 +44,5 @@ endif
 #
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
+
+CYANOGEN_WITH_GOOGLE := true
