@@ -29,8 +29,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/zeus
 #PRODUCT_PACKAGES += Torch
 
 
-# Ti FM radio
-$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+# BCM FM radio
+#$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
 #
 # Set ro.modversion
