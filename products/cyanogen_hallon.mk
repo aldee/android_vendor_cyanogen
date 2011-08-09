@@ -18,7 +18,7 @@ PRODUCT_MANUFACTURER := Sony Ericsson
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=MT15i BUILD_ID=3.0.1.A.0.145 BUILD_DISPLAY_ID=3.0.1.A.0.145 BUILD_FINGERPRINT=SEMC/MT15i_1247-0875/MT15i:2.3.3/3.0.1.A.0.145/bn_P:user/release-keys PRIVATE_BUILD_DESC="MT15i-user 2.3.3 3.0.1.A.0.145 bn_P test-keys"
 
 # Add the Torch app
-PRODUCT_PACKAGES += Torch
+PRODUCT_PACKAGES += SETorch
 
 # TI FM radio
 #$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)

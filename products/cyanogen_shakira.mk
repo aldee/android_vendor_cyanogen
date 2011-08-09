@@ -21,7 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_DEVICE=E15i PRODUCT_NAME=E15i BUILD_ID=3
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/shakira
 
 # Ti FM radio
-#$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)
+$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)
 
 #
 # Set ro.modversion
@@ -35,7 +35,7 @@ else
             ro.modversion=CyanogenMod-7.1.0-RC1-X8
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-RC1-X8-FXP011
+            ro.modversion=CyanogenMod-7.1.0-RC1-X8-FXP015
     endif
 endif
 
